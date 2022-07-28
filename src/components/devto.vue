@@ -47,7 +47,7 @@ export default {
     }
   },
   mounted() {
-    fetch(`https://dev.to/api/articles?username=${USERNAME_DEVTO}`)
+    fetch(`https://dev.to/api/articles?username=${USERNAME_DEVTO}&per_page=100`)
         .then(res => res.json())
         .then(data => {
           this.posts = data
@@ -123,7 +123,7 @@ h2 {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   margin: 1rem auto;
   max-width: 1200px;
   padding-bottom: 3rem;
@@ -132,13 +132,12 @@ h2 {
 .card {
   display: flex;
   flex-direction: column;
-  background-color: #f7f7f7;
   color: #262626;
   text-decoration: none;
-  box-shadow: 2px 2px 4px #26262636;
-}
-.card, .card__image {
   border-radius: 5px;
+}
+.card__image {
+  border-radius: 5px 5px 0 0;
 }
 .card,
 .card:hover .card__image {
@@ -146,7 +145,8 @@ h2 {
 }
 
 .card:hover {
-  box-shadow: unset;
+  background-color: #f7f7f7;
+  box-shadow: 2px 2px 4px #26262636;
 }
 
 .card:hover .card__image {
