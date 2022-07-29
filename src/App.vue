@@ -1,16 +1,20 @@
 <template>
-  <devto/>
+  <div class="mw1200">
+    <noteoss/>
+    <devto />
+  </div>
 </template>
 
 <script>
-import devto from './components/devto.vue'
-
+import devto from "./components/devto.vue";
+import noteoss from "./components/noteoss.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    devto
-  }
-}
+    devto,
+    noteoss
+  },
+};
 </script>
 
 <style>
@@ -19,5 +23,9 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   user-select: none;
+}
+.mw1200 {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 </style>

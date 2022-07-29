@@ -13,8 +13,6 @@
           <h2>{{ user.summary }}</h2>
         </div>
       </div>
-
-
     </section>
     <div class="grid">
       <a v-for='post in posts' :key='post' class="card" :href='post.url'>
@@ -83,7 +81,6 @@ h2 {
 .profile_title {
   display: flex;
   align-items: center;
-  max-width: 1200px;
   margin: 1rem auto;
   background-color: #f7f7f7;
   border-radius: 5px;
@@ -125,7 +122,6 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 2rem;
   margin: 1rem auto;
-  max-width: 1200px;
   padding-bottom: 3rem;
 }
 
