@@ -74,10 +74,12 @@ h1 {
   text-transform: uppercase;
   margin: unset;
 }
+
 h2 {
   font-size: 1.3rem;
   line-height: 1.8rem;
 }
+
 .profile_title {
   display: flex;
   align-items: center;
@@ -85,18 +87,22 @@ h2 {
   background-color: #f7f7f7;
   border-radius: 5px;
 }
+
 @media screen and (max-width: 768px) {
   .profile_title {
     flex-direction: column;
     margin: 0 auto;
   }
+
   .profile_title > div:last-of-type {
     text-align: center;
   }
 }
+
 .profile_title > div {
   margin: 1rem;
 }
+
 .profile_title > div:first-of-type {
   margin-right: 1rem;
   text-align: center;
@@ -113,6 +119,7 @@ h2 {
   margin-right: 1rem;
   transition: .3s;
 }
+
 .profile_title img:hover {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -132,9 +139,11 @@ h2 {
   text-decoration: none;
   border-radius: 5px;
 }
+
 .card__image {
   border-radius: 5px 5px 0 0;
 }
+
 .card,
 .card:hover .card__image {
   transition: .3s;
