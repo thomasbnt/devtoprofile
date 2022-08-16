@@ -2,7 +2,6 @@
 
 > An example of getting data from the dev.to API to display its own articles.
 
-
 | [Preview the project](https://thomasbntdevto.netlify.app/) |
 |------------------------------------------------------------|
 
@@ -29,22 +28,22 @@ you have a `data-user` attribute. This is your ID.
 ____
 ## How to develop this project
 ### Project setup
-```
+```bash
 yarn install
 ```
 
 ### Compiles and hot-reloads for development
-```
+```bash
 yarn serve
 ```
 
 ### Compiles and minifies for production
-```
+```bash
 yarn build
 ```
 
 ### Lints and fixes files
-```
+```bash
 yarn lint
 ```
 
