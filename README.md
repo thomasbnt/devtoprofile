@@ -1,9 +1,11 @@
 # Getting data from the API of DEV.TO
 
-> An example of getting data from the dev.to API to display its own articles.
+An example of getting data from the dev.to API to display its own articles.
 
-| [Preview the project](https://thomasbntdevto.netlify.app/) |
-|------------------------------------------------------------|
+
+> **Note**
+>
+> [See the preview of this project here →](https://thomasbntdevto.netlify.app/) 
 
 [![Preview of this project](https://user-images.githubusercontent.com/14293805/181784516-faf7e76c-0215-42cc-9d1e-6efdcde30c67.png)](https://thomasbntdevto.netlify.app/)
 
