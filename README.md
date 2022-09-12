@@ -1,3 +1,6 @@
+[![Make with VueJS](https://img.shields.io/badge/-Make%20with%20Vue.js-4fc08d?style=for-the-badge&logo=vuedotjs&logoColor=white)](https://vuejs.org/)
+[![wakatime](https://wakatime.com/badge/github/thomasbnt/thomasbnt_devto.svg?style=for-the-badge)](https://wakatime.com/badge/github/thomasbnt/thomasbnt_devto)
+
 # Getting data from the API of DEV.TO
 
 An example of getting data from the dev.to API to display its own articles.
