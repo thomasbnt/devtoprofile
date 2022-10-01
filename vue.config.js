@@ -1,3 +1,3 @@
-export default defineConfig({
-  base: '/thomasbnt_devto/'
-});
+module.exports = {
+  publicPath: '/thomasbnt_devto/'
+}
