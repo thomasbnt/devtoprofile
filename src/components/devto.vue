@@ -3,9 +3,10 @@
     <section class="profile">
       <div class="profile_title">
         <div>
-          <a :href='userLink' target="_blank" rel="noopener noreferrer">
-            <img :src='user.profile_image' :alt='user.name' draggable="false">
+          <a :href="userLink" target="_blank" rel="noopener noreferrer">
+            <img :src="user.profile_image" :alt="user.name" draggable="false" />
           </a>
+          <p>{{ totalPosts() }}</p>
           <p>Joined at {{ user.joined_at }}</p>
         </div>
         <div>
@@ -15,8 +16,13 @@
       </div>
     </section>
     <div class="grid">
-      <a v-for='post in posts' :key='post' class="card" :href='post.url'>
-        <img :src="post.social_image" :alt='post.title' class="card__image" draggable="false">
+      <a v-for="post in posts" :key="post" class="card" :href="post.url">
+        <img
+          :src="post.social_image"
+          :alt="post.title"
+          class="card__image"
+          draggable="false"
+        />
         <div class="card__content">
           <h3 class="card__title">{{ post.title }}</h3>
           <p class="card__desc">{{ post.description }}</p>
@@ -28,45 +34,58 @@
 </template>
 
 <script>
-const USERID_DEVTO = '18254'
-const USERNAME_DEVTO = 'thomasbnt'
+const USERID_DEVTO = "18254";
+const USERNAME_DEVTO = "thomasbnt";
 
 export default {
-  name: 'devto',
+  name: "devto",
   data() {
     return {
       posts: {
-        data: []
+        data: [],
       },
       user: {
-        user: {}
+        user: {},
       },
-      userLink: `https://dev.to/${USERNAME_DEVTO}`
-    }
+      userLink: `https://dev.to/${USERNAME_DEVTO}`,
+    };
   },
   mounted() {
-    fetch(`https://dev.to/api/articles?username=${USERNAME_DEVTO}&per_page=100`)
-        .then(res => res.json())
-        .then(data => {
-          this.posts = data
-        })
-        .catch(error => console.log(error))
+    fetch(
+      `https://dev.to/api/articles?username=${USERNAME_DEVTO}&per_page=200`
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        this.posts = data;
+      })
+      .catch((error) => console.log(error));
     fetch(`https://dev.to/api/users/${USERID_DEVTO}`)
-        .then(res => res.json())
-        .then(data => {
-          document.title = `${data.username} on dev.to`
-          document.querySelector('link[rel="icon"]').href = data.profile_image
-          this.user = data
-        })
-        .catch(error => console.log(error))
+      .then((res) => res.json())
+      .then((data) => {
+        document.title = `${data.username} on dev.to`;
+        document.querySelector('link[rel="icon"]').href = data.profile_image;
+        this.user = data;
+      })
+      .catch((error) => console.log(error));
   },
   methods: {
     formatDate(date) {
-      const options = {year: 'numeric', month: 'long', day: 'numeric'}
-      return new Date(date).toLocaleDateString('en', options)
-    }
-  }
-}
+      const options = { year: "numeric", month: "long", day: "numeric" };
+      return new Date(date).toLocaleDateString("en", options);
+    },
+    totalPosts() {
+      let total = this.posts.length;
+      if (!total) {
+        return `No post`;
+      }
+      if (total <= 200) {
+        return `${total} posts`;
+      } else {
+        return `200+ posts`;
+      }
+    },
+  },
+};
 </script>
 <style scoped>
 h1 {
@@ -108,7 +127,9 @@ h2 {
   text-align: center;
 }
 
-.profile_title h1, .profile_title h2, .profile_title p {
+.profile_title h1,
+.profile_title h2,
+.profile_title p {
   font-weight: 100;
 }
 
@@ -117,7 +138,7 @@ h2 {
   height: 100px;
   border-radius: 50%;
   margin-right: 1rem;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .profile_title img:hover {
@@ -146,7 +167,7 @@ h2 {
 
 .card,
 .card:hover .card__image {
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .card:hover {
@@ -183,5 +204,4 @@ h2 {
 .card__date {
   font-size: 0.8rem;
 }
-
 </style>
