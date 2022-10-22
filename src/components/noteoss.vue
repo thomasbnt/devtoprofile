@@ -3,7 +3,7 @@
     <p class="note_oss">
       This page is <b>Open Source on GitHub</b>. Don't hesitate
       <a
-          href="https://github.com/thomasbnt/thomasbnt_devto"
+          href="https://github.com/thomasbnt/devtoprofile"
           target="_blank"
           rel="noopener noreferrer">
         to follow me and contribute to this repository

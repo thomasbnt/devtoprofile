@@ -10,9 +10,9 @@ An example of getting data from the dev.to API to display its own articles.
 
 > **Note**
 >
-> [See the preview of this project here →](https://thomasbntdevto.netlify.app/) 
+> [See the preview of this project here →](https://devtoprofile.netlify.app/) 
 
-[![Preview of this project](https://user-images.githubusercontent.com/14293805/181784516-faf7e76c-0215-42cc-9d1e-6efdcde30c67.png)](https://thomasbntdevto.netlify.app/)
+[![Preview of this project](https://user-images.githubusercontent.com/14293805/181784516-faf7e76c-0215-42cc-9d1e-6efdcde30c67.png)](https://devtoprofile.netlify.app/)
 
 Work with **VueJS**, **fetch** and the **[API of dev.to](https://developers.forem.com/api)**.
 
