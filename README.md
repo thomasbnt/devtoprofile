@@ -1,7 +1,7 @@
-[![Make with VueJS](https://img.shields.io/badge/-Make%20with%20Vue.js-4fc08d?style=for-the-badge&logo=vuedotjs&logoColor=white)](https://vuejs.org/)
-![GitHub last commit](https://img.shields.io/github/last-commit/thomasbnt/thomasbnt_devto?style=for-the-badge)
-[![Discord](https://img.shields.io/discord/367753345575944221?color=%237289DA&label=Discord%20server&logo=discord&logoColor=white&style=for-the-badge)](https://thomasbnt.dev/discord)
-[![Twitter Follow](https://img.shields.io/twitter/follow/Thomasbnt_?color=%231DA1F2&label=Follow%20me&logo=Twitter&logoColor=white&style=for-the-badge)](https://twitter.com/Thomasbnt_) 
+[![Make with VueJS](https://img.shields.io/badge/-Make%20with%20Vue.js-4fc08d?&logo=vuedotjs&logoColor=white)](https://vuejs.org/)
+![GitHub last commit](https://img.shields.io/github/last-commit/thomasbnt/devtoprofile)
+[![Discord](https://img.shields.io/discord/367753345575944221?color=%237289DA&label=Discord%20server&logo=discord&logoColor=white)](https://thomasbnt.dev/discord)
+[![Twitter Follow](https://img.shields.io/twitter/follow/Thomasbnt_?color=%231DA1F2&label=Follow%20me&logo=Twitter&logoColor=white)](https://twitter.com/Thomasbnt_) 
 
 # Getting data from the API of DEV.TO
 
