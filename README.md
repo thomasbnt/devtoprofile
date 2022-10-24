@@ -1,19 +1,13 @@
 # Getting data from the API of DEV.TO
 
-An example of getting data from the dev.to API to display its own articles. Work with **VueJS**, **fetch** and the **[API of dev.to](https://developers.forem.com/api)**.
+> An example of getting data from the dev.to API to display its own articles.
 
-> **Note**
->
-> [See the preview of this project here →](https://thomasbntdevto.netlify.app/)
-> 
+| [Preview the project](https://thomasbntdevto.netlify.app/) |
+|------------------------------------------------------------|
+
 [![Preview of this project](https://user-images.githubusercontent.com/14293805/181784516-faf7e76c-0215-42cc-9d1e-6efdcde30c67.png)](https://thomasbntdevto.netlify.app/)
 
-> **Note**
->
-> More projects like that ?  [Check this list](https://github.com/stars/thomasbnt/lists/created-api-stuff).
->
-> [![See the list of awesome projects with an API](https://img.shields.io/badge/See%20the%20list%20of%20awesome%20projects%20with%20an%20API%20→-informational?style=for-the-badge)](https://github.com/stars/thomasbnt/lists/created-api-stuff)
-
+Work with **VueJS**, **fetch** and the **[API of dev.to](https://developers.forem.com/api)**.
 
 ## How to get my data ? 
 
