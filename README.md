@@ -1,7 +1,9 @@
-[![Make with VueJS](https://img.shields.io/badge/-Make%20with%20Vue.js-4fc08d?&logo=vuedotjs&logoColor=white)](https://vuejs.org/)
+[![Made with VueJS](https://img.shields.io/badge/-Made%20with%20Vue.js-4fc08d?&logo=vuedotjs&logoColor=white)](https://vuejs.org/)
 ![GitHub last commit](https://img.shields.io/github/last-commit/thomasbnt/devtoprofile)
+[![Depfu](https://badges.depfu.com/badges/e7801f7df617042ea8647068a675fa8c/count.svg)](https://depfu.com/github/thomasbnt/devtoprofile?project_id=36535)
 [![Discord](https://img.shields.io/discord/367753345575944221?color=%237289DA&label=Discord%20server&logo=discord&logoColor=white)](https://thomasbnt.dev/discord)
-[![Twitter Follow](https://img.shields.io/twitter/follow/Thomasbnt_?color=%231DA1F2&label=Follow%20me&logo=Twitter&logoColor=white)](https://twitter.com/Thomasbnt_)
+[![GitHub Sponsors](https://img.shields.io/badge/Want%20to%20sponsor%20me%20on%20GitHub%20%3F-%23EA54AE.svg?&logo=github-sponsors&logoColor=white)](https://github.com/sponsors/thomasbnt) 
+[![Twitter Follow](https://img.shields.io/twitter/follow/Thomasbnt_?color=%231DA1F2&label=Follow%20me&logo=Twitter)](https://twitter.com/Thomasbnt_)
 
 # Getting data from the API of DEV.TO
 
@@ -9,10 +11,10 @@ An example of getting data from the dev.to API to display its own articles. Work
 
 > **Note**
 >
-> [See the preview of this project here →](https://thomasbntdevto.netlify.app/)
+> [See the preview of this project here →](https://devtoprofile.netlify.app/)
 
 
-[![Preview of this project](https://user-images.githubusercontent.com/14293805/181784516-faf7e76c-0215-42cc-9d1e-6efdcde30c67.png)](https://thomasbntdevto.netlify.app/)
+[![Preview of this project](https://user-images.githubusercontent.com/14293805/181784516-faf7e76c-0215-42cc-9d1e-6efdcde30c67.png)](https://devtoprofile.netlify.app/)
 
 > **Note**
 >
