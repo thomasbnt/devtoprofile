@@ -1,6 +1,7 @@
 [![Made with VueJS](https://img.shields.io/badge/-Made%20with%20Vue.js-4fc08d?&logo=vuedotjs&logoColor=white)](https://vuejs.org/)
 ![GitHub last commit](https://img.shields.io/github/last-commit/thomasbnt/devtoprofile)
 [![Depfu](https://badges.depfu.com/badges/e7801f7df617042ea8647068a675fa8c/count.svg)](https://depfu.com/github/thomasbnt/devtoprofile?project_id=36535)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/975cb803-439f-4cc8-8d3d-d76400d141fb/deploy-status)](https://app.netlify.com/sites/devtoprofile/deploys)
 [![Discord](https://img.shields.io/discord/367753345575944221?color=%237289DA&label=Discord%20server&logo=discord&logoColor=white)](https://thomasbnt.dev/discord)
 [![GitHub Sponsors](https://img.shields.io/badge/Sponsor%20me%20on%20GitHub%20-%23EA54AE.svg?&logo=github-sponsors&logoColor=white)](https://github.com/sponsors/thomasbnt) 
 [![Twitter Follow](https://img.shields.io/twitter/follow/Thomasbnt_?color=%231DA1F2&label=Follow%20me&logo=Twitter)](https://twitter.com/Thomasbnt_)
