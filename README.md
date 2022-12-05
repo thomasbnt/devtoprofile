@@ -11,10 +11,10 @@ An example of getting data from the dev.to API to display its own articles. Work
 
 > **Note**
 >
-> [See the preview of this project here →](https://devtoprofile.pages.dev/)
+> [See the preview of this project here →](https://devtoprofile.thomasbnt.dev/)
 
 
-[![Preview of this project](https://user-images.githubusercontent.com/14293805/181784516-faf7e76c-0215-42cc-9d1e-6efdcde30c67.png)](https://devtoprofile.pages.dev/)
+[![Preview of this project](https://user-images.githubusercontent.com/14293805/181784516-faf7e76c-0215-42cc-9d1e-6efdcde30c67.png)](https://devtoprofile.thomasbnt.dev/)
 
 > **Note**
 >
