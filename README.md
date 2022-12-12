@@ -7,7 +7,7 @@
 
 # Getting data from the API of DEV.TO
 
-An example of getting data from the dev.to API to display its own articles. Work with **VueJS**, **fetch** and the **[API of dev.to](https://developers.forem.com/api)**.
+An example of getting data from the dev.to API to display its own articles. Work with **VueJS**, **fetch** and the **[API v0 of dev.to](https://developers.forem.com/api)**.
 
 > **Note**
 >
