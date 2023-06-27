@@ -4,7 +4,7 @@
       <div class="profile_title">
         <div>
           <a :href="userLink" target="_blank" rel="noopener noreferrer">
-            <img :src="user.profile_image" :alt="user.name" draggable="false" />
+            <img :src="user.profile_image" :alt="user.name" draggable="false"/>
           </a>
           <p>{{ totalPosts() }}</p>
           <p>Joined at {{ user.joined_at }}</p>
@@ -18,10 +18,10 @@
     <div class="grid">
       <a v-for="post in posts" :key="post" class="card" :href="post.url">
         <img
-          :src="post.social_image"
-          :alt="post.title"
-          class="card__image"
-          draggable="false"
+            :src="post.social_image"
+            :alt="post.title"
+            class="card__image"
+            draggable="false"
         />
         <div class="card__content">
           <h3 class="card__title">{{ post.title }}</h3>
@@ -52,25 +52,35 @@ export default {
   },
   mounted() {
     fetch(
-      `https://dev.to/api/articles?username=${USERNAME_DEVTO}&per_page=200`
+        `https://dev.to/api/articles?username=${USERNAME_DEVTO}&per_page=200`,
+        {
+          headers: {
+            accept: "application/vnd.forem.api-v1+json",
+          },
+        }
     )
-      .then((res) => res.json())
-      .then((data) => {
-        this.posts = data;
-      })
-      .catch((error) => console.log(error));
-    fetch(`https://dev.to/api/users/${USERID_DEVTO}`)
-      .then((res) => res.json())
-      .then((data) => {
-        document.title = `${data.username} on dev.to`;
-        document.querySelector('link[rel="icon"]').href = data.profile_image;
-        this.user = data;
-      })
-      .catch((error) => console.log(error));
+        .then((res) => res.json())
+        .then((data) => {
+          this.posts = data;
+        })
+        .catch((error) => console.log(error));
+    fetch(`https://dev.to/api/users/${USERID_DEVTO}`,
+        {
+          headers: {
+            accept: "application/vnd.forem.api-v1+json",
+          }
+        })
+        .then((res) => res.json())
+        .then((data) => {
+          document.title = `${data.username} on dev.to`;
+          document.querySelector('link[rel="icon"]').href = data.profile_image;
+          this.user = data;
+        })
+        .catch((error) => console.log(error));
   },
   methods: {
     formatDate(date) {
-      const options = { year: "numeric", month: "long", day: "numeric" };
+      const options = {year: "numeric", month: "long", day: "numeric"};
       return new Date(date).toLocaleDateString("en", options);
     },
     totalPosts() {
@@ -83,8 +93,8 @@ export default {
       } else {
         return `200+ posts`;
       }
-    },
-  },
+    }
+  }
 };
 </script>
 <style scoped>
