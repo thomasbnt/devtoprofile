@@ -2527,9 +2527,9 @@ core-js-compat@^3.21.0, core-js-compat@^3.22.1, core-js-compat@^3.6.5:
     browserslist "^4.21.2"
     semver "7.0.0"
 
-core-js@^3.33.2:
-  version "3.33.2"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.33.2.tgz#312bbf6996a3a517c04c99b9909cdd27138d1ceb"
+core-js@^3.33.3:
+  version "3.33.3"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.33.3.tgz#3c644a323f0f533a0d360e9191e37f7fc059088d"
 
 core-js@^3.6.5:
   version "3.25.3"
