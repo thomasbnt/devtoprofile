@@ -1305,15 +1305,6 @@
     semver "^6.1.0"
     strip-ansi "^6.0.0"
 
-"@vue/compiler-core@3.3.12":
-  version "3.3.12"
-  resolved "https://registry.yarnpkg.com/@vue/compiler-core/-/compiler-core-3.3.12.tgz#3346c0f55ce0d59e17c21d9eef9154b70c19931b"
-  dependencies:
-    "@babel/parser" "^7.23.5"
-    "@vue/shared" "3.3.12"
-    estree-walker "^2.0.2"
-    source-map-js "^1.0.2"
-
 "@vue/compiler-core@3.3.13":
   version "3.3.13"
   resolved "https://registry.yarnpkg.com/@vue/compiler-core/-/compiler-core-3.3.13.tgz#b3d5f8f84caee5de3f31d95cb568d899fd19c599"
@@ -1323,13 +1314,6 @@
     estree-walker "^2.0.2"
     source-map-js "^1.0.2"
 
-"@vue/compiler-dom@3.3.12":
-  version "3.3.12"
-  resolved "https://registry.yarnpkg.com/@vue/compiler-dom/-/compiler-dom-3.3.12.tgz#267c54b388d58f30fc120ea496ebf27d4ea8368b"
-  dependencies:
-    "@vue/compiler-core" "3.3.12"
-    "@vue/shared" "3.3.12"
-
 "@vue/compiler-dom@3.3.13":
   version "3.3.13"
   resolved "https://registry.yarnpkg.com/@vue/compiler-dom/-/compiler-dom-3.3.13.tgz#d029e222e545e7ab00be35aafd3abed167f962bf"
@@ -1337,7 +1321,7 @@
     "@vue/compiler-core" "3.3.13"
     "@vue/shared" "3.3.13"
 
-"@vue/compiler-sfc@3.3.13":
+"@vue/compiler-sfc@3.3.13", "@vue/compiler-sfc@^3.3.13":
   version "3.3.13"
   resolved "https://registry.yarnpkg.com/@vue/compiler-sfc/-/compiler-sfc-3.3.13.tgz#7b397acefd5c0c3808701d2855be88c4be60155c"
   dependencies:
@@ -1351,28 +1335,6 @@
     magic-string "^0.30.5"
     postcss "^8.4.32"
     source-map-js "^1.0.2"
-
-"@vue/compiler-sfc@^3.3.12":
-  version "3.3.12"
-  resolved "https://registry.yarnpkg.com/@vue/compiler-sfc/-/compiler-sfc-3.3.12.tgz#6ec2c19858f264671457699c1f3a0a6fedf429fe"
-  dependencies:
-    "@babel/parser" "^7.23.5"
-    "@vue/compiler-core" "3.3.12"
-    "@vue/compiler-dom" "3.3.12"
-    "@vue/compiler-ssr" "3.3.12"
-    "@vue/reactivity-transform" "3.3.12"
-    "@vue/shared" "3.3.12"
-    estree-walker "^2.0.2"
-    magic-string "^0.30.5"
-    postcss "^8.4.32"
-    source-map-js "^1.0.2"
-
-"@vue/compiler-ssr@3.3.12":
-  version "3.3.12"
-  resolved "https://registry.yarnpkg.com/@vue/compiler-ssr/-/compiler-ssr-3.3.12.tgz#e62499c6003ccd09acb7190167d08845e3a0eaa5"
-  dependencies:
-    "@vue/compiler-dom" "3.3.12"
-    "@vue/shared" "3.3.12"
 
 "@vue/compiler-ssr@3.3.13":
   version "3.3.13"
@@ -1399,16 +1361,6 @@
 "@vue/preload-webpack-plugin@^1.1.0":
   version "1.1.2"
   resolved "https://registry.npmjs.org/@vue/preload-webpack-plugin/-/preload-webpack-plugin-1.1.2.tgz"
-
-"@vue/reactivity-transform@3.3.12":
-  version "3.3.12"
-  resolved "https://registry.yarnpkg.com/@vue/reactivity-transform/-/reactivity-transform-3.3.12.tgz#4cb871b597eb8b321577b4d7f1e93eaebca16128"
-  dependencies:
-    "@babel/parser" "^7.23.5"
-    "@vue/compiler-core" "3.3.12"
-    "@vue/shared" "3.3.12"
-    estree-walker "^2.0.2"
-    magic-string "^0.30.5"
 
 "@vue/reactivity-transform@3.3.13":
   version "3.3.13"
@@ -1447,10 +1399,6 @@
   dependencies:
     "@vue/compiler-ssr" "3.3.13"
     "@vue/shared" "3.3.13"
-
-"@vue/shared@3.3.12":
-  version "3.3.12"
-  resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.3.12.tgz#7c030c4e2f1db8beb638b159cbb86d0ff78c3198"
 
 "@vue/shared@3.3.13":
   version "3.3.13"
