@@ -243,6 +243,10 @@
   version "7.23.6"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.23.6.tgz#ba1c9e512bda72a47e285ae42aff9d2a635a9e3b"
 
+"@babel/parser@^7.23.9":
+  version "7.23.9"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.23.9.tgz#7b903b6149b0f8fa7ad564af646c4c38a77fc44b"
+
 "@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression@^7.18.6":
   version "7.18.6"
   resolved "https://registry.npmjs.org/@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression/-/plugin-bugfix-safari-id-destructuring-collision-in-function-expression-7.18.6.tgz"
@@ -1315,6 +1319,16 @@
     estree-walker "^2.0.2"
     source-map-js "^1.0.2"
 
+"@vue/compiler-core@3.4.18":
+  version "3.4.18"
+  resolved "https://registry.yarnpkg.com/@vue/compiler-core/-/compiler-core-3.4.18.tgz#b875e27f6ba71c6e2cf4e9befa7f98c66afabf22"
+  dependencies:
+    "@babel/parser" "^7.23.9"
+    "@vue/shared" "3.4.18"
+    entities "^4.5.0"
+    estree-walker "^2.0.2"
+    source-map-js "^1.0.2"
+
 "@vue/compiler-dom@3.4.15":
   version "3.4.15"
   resolved "https://registry.yarnpkg.com/@vue/compiler-dom/-/compiler-dom-3.4.15.tgz#753f5ed55f78d33dff04701fad4d76ff0cf81ee5"
@@ -1322,7 +1336,28 @@
     "@vue/compiler-core" "3.4.15"
     "@vue/shared" "3.4.15"
 
-"@vue/compiler-sfc@3.4.15", "@vue/compiler-sfc@^3.4.15":
+"@vue/compiler-dom@3.4.18":
+  version "3.4.18"
+  resolved "https://registry.yarnpkg.com/@vue/compiler-dom/-/compiler-dom-3.4.18.tgz#43eca1e570199f732a9d71c0fe0db1bfd455078a"
+  dependencies:
+    "@vue/compiler-core" "3.4.18"
+    "@vue/shared" "3.4.18"
+
+"@vue/compiler-sfc@3.4.18":
+  version "3.4.18"
+  resolved "https://registry.yarnpkg.com/@vue/compiler-sfc/-/compiler-sfc-3.4.18.tgz#22d8e1c178e61e64380681119b617abaf87f1634"
+  dependencies:
+    "@babel/parser" "^7.23.9"
+    "@vue/compiler-core" "3.4.18"
+    "@vue/compiler-dom" "3.4.18"
+    "@vue/compiler-ssr" "3.4.18"
+    "@vue/shared" "3.4.18"
+    estree-walker "^2.0.2"
+    magic-string "^0.30.6"
+    postcss "^8.4.33"
+    source-map-js "^1.0.2"
+
+"@vue/compiler-sfc@^3.4.15":
   version "3.4.15"
   resolved "https://registry.yarnpkg.com/@vue/compiler-sfc/-/compiler-sfc-3.4.15.tgz#4e5811e681955fcec886cebbec483f6ae463a64b"
   dependencies:
@@ -1343,6 +1378,13 @@
     "@vue/compiler-dom" "3.4.15"
     "@vue/shared" "3.4.15"
 
+"@vue/compiler-ssr@3.4.18":
+  version "3.4.18"
+  resolved "https://registry.yarnpkg.com/@vue/compiler-ssr/-/compiler-ssr-3.4.18.tgz#990485af30204b8607d1613412319dec78a2bc58"
+  dependencies:
+    "@vue/compiler-dom" "3.4.18"
+    "@vue/shared" "3.4.18"
+
 "@vue/component-compiler-utils@^3.1.0", "@vue/component-compiler-utils@^3.1.2":
   version "3.3.0"
   resolved "https://registry.npmjs.org/@vue/component-compiler-utils/-/component-compiler-utils-3.3.0.tgz"
@@ -1362,37 +1404,41 @@
   version "1.1.2"
   resolved "https://registry.npmjs.org/@vue/preload-webpack-plugin/-/preload-webpack-plugin-1.1.2.tgz"
 
-"@vue/reactivity@3.4.15":
-  version "3.4.15"
-  resolved "https://registry.yarnpkg.com/@vue/reactivity/-/reactivity-3.4.15.tgz#ad9d9b83f5398d2e8660ad5cfc0f171e7679a9a1"
+"@vue/reactivity@3.4.18":
+  version "3.4.18"
+  resolved "https://registry.yarnpkg.com/@vue/reactivity/-/reactivity-3.4.18.tgz#c67f1860c72f681bff08aec2642e06524202230d"
   dependencies:
-    "@vue/shared" "3.4.15"
+    "@vue/shared" "3.4.18"
 
-"@vue/runtime-core@3.4.15":
-  version "3.4.15"
-  resolved "https://registry.yarnpkg.com/@vue/runtime-core/-/runtime-core-3.4.15.tgz#f81e2fd2108ea41a6d5c61c2462b11dfb754fdf0"
+"@vue/runtime-core@3.4.18":
+  version "3.4.18"
+  resolved "https://registry.yarnpkg.com/@vue/runtime-core/-/runtime-core-3.4.18.tgz#e45d2e8df281dc517c469693e023f6b8e3752d9a"
   dependencies:
-    "@vue/reactivity" "3.4.15"
-    "@vue/shared" "3.4.15"
+    "@vue/reactivity" "3.4.18"
+    "@vue/shared" "3.4.18"
 
-"@vue/runtime-dom@3.4.15":
-  version "3.4.15"
-  resolved "https://registry.yarnpkg.com/@vue/runtime-dom/-/runtime-dom-3.4.15.tgz#108ef86aa7334ead5d6b9c56a7d93679e1e45406"
+"@vue/runtime-dom@3.4.18":
+  version "3.4.18"
+  resolved "https://registry.yarnpkg.com/@vue/runtime-dom/-/runtime-dom-3.4.18.tgz#61909e0e53089d1d596c550b0932a37ec6c41806"
   dependencies:
-    "@vue/runtime-core" "3.4.15"
-    "@vue/shared" "3.4.15"
+    "@vue/runtime-core" "3.4.18"
+    "@vue/shared" "3.4.18"
     csstype "^3.1.3"
 
-"@vue/server-renderer@3.4.15":
-  version "3.4.15"
-  resolved "https://registry.yarnpkg.com/@vue/server-renderer/-/server-renderer-3.4.15.tgz#34438f998e6f6370fac78883a75efe136631957f"
+"@vue/server-renderer@3.4.18":
+  version "3.4.18"
+  resolved "https://registry.yarnpkg.com/@vue/server-renderer/-/server-renderer-3.4.18.tgz#f464cf02b6092a17675760cf99667044c049ad02"
   dependencies:
-    "@vue/compiler-ssr" "3.4.15"
-    "@vue/shared" "3.4.15"
+    "@vue/compiler-ssr" "3.4.18"
+    "@vue/shared" "3.4.18"
 
 "@vue/shared@3.4.15":
   version "3.4.15"
   resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.4.15.tgz#e7d2ea050c667480cb5e1a6df2ac13bcd03a8f30"
+
+"@vue/shared@3.4.18":
+  version "3.4.18"
+  resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.4.18.tgz#5a5bbd5f8c47d5279d585991884be0418ddf5014"
 
 "@vue/web-component-wrapper@^1.2.0":
   version "1.3.0"
@@ -4779,6 +4825,12 @@ magic-string@^0.30.5:
   dependencies:
     "@jridgewell/sourcemap-codec" "^1.4.15"
 
+magic-string@^0.30.6:
+  version "0.30.7"
+  resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.30.7.tgz#0cecd0527d473298679da95a2d7aeb8c64048505"
+  dependencies:
+    "@jridgewell/sourcemap-codec" "^1.4.15"
+
 make-dir@^2.0.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/make-dir/-/make-dir-2.1.0.tgz"
@@ -7294,15 +7346,15 @@ vue-template-es2015-compiler@^1.9.0:
   version "1.9.1"
   resolved "https://registry.npmjs.org/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz"
 
-vue@^3.4.15:
-  version "3.4.15"
-  resolved "https://registry.yarnpkg.com/vue/-/vue-3.4.15.tgz#91f979844ffca9239dff622ba4c79c5d5524b88c"
+vue@^3.4.18:
+  version "3.4.18"
+  resolved "https://registry.yarnpkg.com/vue/-/vue-3.4.18.tgz#78dc26a3af616325dba6eb3156b87ec5e6d9b089"
   dependencies:
-    "@vue/compiler-dom" "3.4.15"
-    "@vue/compiler-sfc" "3.4.15"
-    "@vue/runtime-dom" "3.4.15"
-    "@vue/server-renderer" "3.4.15"
-    "@vue/shared" "3.4.15"
+    "@vue/compiler-dom" "3.4.18"
+    "@vue/compiler-sfc" "3.4.18"
+    "@vue/runtime-dom" "3.4.18"
+    "@vue/server-renderer" "3.4.18"
+    "@vue/shared" "3.4.18"
 
 watchpack-chokidar2@^2.0.1:
   version "2.0.1"
