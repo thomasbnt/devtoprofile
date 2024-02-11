@@ -239,10 +239,6 @@
   version "7.18.9"
   resolved "https://registry.npmjs.org/@babel/parser/-/parser-7.18.9.tgz"
 
-"@babel/parser@^7.23.6":
-  version "7.23.6"
-  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.23.6.tgz#ba1c9e512bda72a47e285ae42aff9d2a635a9e3b"
-
 "@babel/parser@^7.23.9":
   version "7.23.9"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.23.9.tgz#7b903b6149b0f8fa7ad564af646c4c38a77fc44b"
@@ -1309,16 +1305,6 @@
     semver "^6.1.0"
     strip-ansi "^6.0.0"
 
-"@vue/compiler-core@3.4.15":
-  version "3.4.15"
-  resolved "https://registry.yarnpkg.com/@vue/compiler-core/-/compiler-core-3.4.15.tgz#be20d1bbe19626052500b48969302cb6f396d36e"
-  dependencies:
-    "@babel/parser" "^7.23.6"
-    "@vue/shared" "3.4.15"
-    entities "^4.5.0"
-    estree-walker "^2.0.2"
-    source-map-js "^1.0.2"
-
 "@vue/compiler-core@3.4.18":
   version "3.4.18"
   resolved "https://registry.yarnpkg.com/@vue/compiler-core/-/compiler-core-3.4.18.tgz#b875e27f6ba71c6e2cf4e9befa7f98c66afabf22"
@@ -1329,13 +1315,6 @@
     estree-walker "^2.0.2"
     source-map-js "^1.0.2"
 
-"@vue/compiler-dom@3.4.15":
-  version "3.4.15"
-  resolved "https://registry.yarnpkg.com/@vue/compiler-dom/-/compiler-dom-3.4.15.tgz#753f5ed55f78d33dff04701fad4d76ff0cf81ee5"
-  dependencies:
-    "@vue/compiler-core" "3.4.15"
-    "@vue/shared" "3.4.15"
-
 "@vue/compiler-dom@3.4.18":
   version "3.4.18"
   resolved "https://registry.yarnpkg.com/@vue/compiler-dom/-/compiler-dom-3.4.18.tgz#43eca1e570199f732a9d71c0fe0db1bfd455078a"
@@ -1343,7 +1322,7 @@
     "@vue/compiler-core" "3.4.18"
     "@vue/shared" "3.4.18"
 
-"@vue/compiler-sfc@3.4.18":
+"@vue/compiler-sfc@3.4.18", "@vue/compiler-sfc@^3.4.18":
   version "3.4.18"
   resolved "https://registry.yarnpkg.com/@vue/compiler-sfc/-/compiler-sfc-3.4.18.tgz#22d8e1c178e61e64380681119b617abaf87f1634"
   dependencies:
@@ -1356,27 +1335,6 @@
     magic-string "^0.30.6"
     postcss "^8.4.33"
     source-map-js "^1.0.2"
-
-"@vue/compiler-sfc@^3.4.15":
-  version "3.4.15"
-  resolved "https://registry.yarnpkg.com/@vue/compiler-sfc/-/compiler-sfc-3.4.15.tgz#4e5811e681955fcec886cebbec483f6ae463a64b"
-  dependencies:
-    "@babel/parser" "^7.23.6"
-    "@vue/compiler-core" "3.4.15"
-    "@vue/compiler-dom" "3.4.15"
-    "@vue/compiler-ssr" "3.4.15"
-    "@vue/shared" "3.4.15"
-    estree-walker "^2.0.2"
-    magic-string "^0.30.5"
-    postcss "^8.4.33"
-    source-map-js "^1.0.2"
-
-"@vue/compiler-ssr@3.4.15":
-  version "3.4.15"
-  resolved "https://registry.yarnpkg.com/@vue/compiler-ssr/-/compiler-ssr-3.4.15.tgz#a910a5b89ba4f0a776e40b63d69bdae2f50616cf"
-  dependencies:
-    "@vue/compiler-dom" "3.4.15"
-    "@vue/shared" "3.4.15"
 
 "@vue/compiler-ssr@3.4.18":
   version "3.4.18"
@@ -1431,10 +1389,6 @@
   dependencies:
     "@vue/compiler-ssr" "3.4.18"
     "@vue/shared" "3.4.18"
-
-"@vue/shared@3.4.15":
-  version "3.4.15"
-  resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.4.15.tgz#e7d2ea050c667480cb5e1a6df2ac13bcd03a8f30"
 
 "@vue/shared@3.4.18":
   version "3.4.18"
@@ -4818,12 +4772,6 @@ lru-cache@^5.1.1:
   resolved "https://registry.npmjs.org/lru-cache/-/lru-cache-5.1.1.tgz"
   dependencies:
     yallist "^3.0.2"
-
-magic-string@^0.30.5:
-  version "0.30.5"
-  resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.30.5.tgz#1994d980bd1c8835dc6e78db7cbd4ae4f24746f9"
-  dependencies:
-    "@jridgewell/sourcemap-codec" "^1.4.15"
 
 magic-string@^0.30.6:
   version "0.30.7"
