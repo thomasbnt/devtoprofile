@@ -1315,6 +1315,16 @@
     estree-walker "^2.0.2"
     source-map-js "^1.0.2"
 
+"@vue/compiler-core@3.4.19":
+  version "3.4.19"
+  resolved "https://registry.yarnpkg.com/@vue/compiler-core/-/compiler-core-3.4.19.tgz#3161b1ede69da00f3ce8155dfab907a3eaa0515e"
+  dependencies:
+    "@babel/parser" "^7.23.9"
+    "@vue/shared" "3.4.19"
+    entities "^4.5.0"
+    estree-walker "^2.0.2"
+    source-map-js "^1.0.2"
+
 "@vue/compiler-dom@3.4.18":
   version "3.4.18"
   resolved "https://registry.yarnpkg.com/@vue/compiler-dom/-/compiler-dom-3.4.18.tgz#43eca1e570199f732a9d71c0fe0db1bfd455078a"
@@ -1322,7 +1332,28 @@
     "@vue/compiler-core" "3.4.18"
     "@vue/shared" "3.4.18"
 
-"@vue/compiler-sfc@3.4.18", "@vue/compiler-sfc@^3.4.18":
+"@vue/compiler-dom@3.4.19":
+  version "3.4.19"
+  resolved "https://registry.yarnpkg.com/@vue/compiler-dom/-/compiler-dom-3.4.19.tgz#2457e57e978f431e3b5fd11fc50a3e92d5816f9a"
+  dependencies:
+    "@vue/compiler-core" "3.4.19"
+    "@vue/shared" "3.4.19"
+
+"@vue/compiler-sfc@3.4.19":
+  version "3.4.19"
+  resolved "https://registry.yarnpkg.com/@vue/compiler-sfc/-/compiler-sfc-3.4.19.tgz#33b238ded6d63e51f6a7048b742626f6007df129"
+  dependencies:
+    "@babel/parser" "^7.23.9"
+    "@vue/compiler-core" "3.4.19"
+    "@vue/compiler-dom" "3.4.19"
+    "@vue/compiler-ssr" "3.4.19"
+    "@vue/shared" "3.4.19"
+    estree-walker "^2.0.2"
+    magic-string "^0.30.6"
+    postcss "^8.4.33"
+    source-map-js "^1.0.2"
+
+"@vue/compiler-sfc@^3.4.18":
   version "3.4.18"
   resolved "https://registry.yarnpkg.com/@vue/compiler-sfc/-/compiler-sfc-3.4.18.tgz#22d8e1c178e61e64380681119b617abaf87f1634"
   dependencies:
@@ -1343,6 +1374,13 @@
     "@vue/compiler-dom" "3.4.18"
     "@vue/shared" "3.4.18"
 
+"@vue/compiler-ssr@3.4.19":
+  version "3.4.19"
+  resolved "https://registry.yarnpkg.com/@vue/compiler-ssr/-/compiler-ssr-3.4.19.tgz#1f8ee06005ebbaa354f8783fad84e9f7ea4a69c2"
+  dependencies:
+    "@vue/compiler-dom" "3.4.19"
+    "@vue/shared" "3.4.19"
+
 "@vue/component-compiler-utils@^3.1.0", "@vue/component-compiler-utils@^3.1.2":
   version "3.3.0"
   resolved "https://registry.npmjs.org/@vue/component-compiler-utils/-/component-compiler-utils-3.3.0.tgz"
@@ -1362,37 +1400,41 @@
   version "1.1.2"
   resolved "https://registry.npmjs.org/@vue/preload-webpack-plugin/-/preload-webpack-plugin-1.1.2.tgz"
 
-"@vue/reactivity@3.4.18":
-  version "3.4.18"
-  resolved "https://registry.yarnpkg.com/@vue/reactivity/-/reactivity-3.4.18.tgz#c67f1860c72f681bff08aec2642e06524202230d"
+"@vue/reactivity@3.4.19":
+  version "3.4.19"
+  resolved "https://registry.yarnpkg.com/@vue/reactivity/-/reactivity-3.4.19.tgz#8cf335d97d07881d8184cb23289289dc18b03f60"
   dependencies:
-    "@vue/shared" "3.4.18"
+    "@vue/shared" "3.4.19"
 
-"@vue/runtime-core@3.4.18":
-  version "3.4.18"
-  resolved "https://registry.yarnpkg.com/@vue/runtime-core/-/runtime-core-3.4.18.tgz#e45d2e8df281dc517c469693e023f6b8e3752d9a"
+"@vue/runtime-core@3.4.19":
+  version "3.4.19"
+  resolved "https://registry.yarnpkg.com/@vue/runtime-core/-/runtime-core-3.4.19.tgz#ef10357fdf3afdf68523b55424541000105e2aeb"
   dependencies:
-    "@vue/reactivity" "3.4.18"
-    "@vue/shared" "3.4.18"
+    "@vue/reactivity" "3.4.19"
+    "@vue/shared" "3.4.19"
 
-"@vue/runtime-dom@3.4.18":
-  version "3.4.18"
-  resolved "https://registry.yarnpkg.com/@vue/runtime-dom/-/runtime-dom-3.4.18.tgz#61909e0e53089d1d596c550b0932a37ec6c41806"
+"@vue/runtime-dom@3.4.19":
+  version "3.4.19"
+  resolved "https://registry.yarnpkg.com/@vue/runtime-dom/-/runtime-dom-3.4.19.tgz#079141e31d9f47515b9595f29843d51011f88739"
   dependencies:
-    "@vue/runtime-core" "3.4.18"
-    "@vue/shared" "3.4.18"
+    "@vue/runtime-core" "3.4.19"
+    "@vue/shared" "3.4.19"
     csstype "^3.1.3"
 
-"@vue/server-renderer@3.4.18":
-  version "3.4.18"
-  resolved "https://registry.yarnpkg.com/@vue/server-renderer/-/server-renderer-3.4.18.tgz#f464cf02b6092a17675760cf99667044c049ad02"
+"@vue/server-renderer@3.4.19":
+  version "3.4.19"
+  resolved "https://registry.yarnpkg.com/@vue/server-renderer/-/server-renderer-3.4.19.tgz#e6f8ff5268d0758766ca9835375218924d5f0eb6"
   dependencies:
-    "@vue/compiler-ssr" "3.4.18"
-    "@vue/shared" "3.4.18"
+    "@vue/compiler-ssr" "3.4.19"
+    "@vue/shared" "3.4.19"
 
 "@vue/shared@3.4.18":
   version "3.4.18"
   resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.4.18.tgz#5a5bbd5f8c47d5279d585991884be0418ddf5014"
+
+"@vue/shared@3.4.19":
+  version "3.4.19"
+  resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.4.19.tgz#28105147811bcf1e6612bf1c9ab0c6d91ada019c"
 
 "@vue/web-component-wrapper@^1.2.0":
   version "1.3.0"
@@ -7294,15 +7336,15 @@ vue-template-es2015-compiler@^1.9.0:
   version "1.9.1"
   resolved "https://registry.npmjs.org/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz"
 
-vue@^3.4.18:
-  version "3.4.18"
-  resolved "https://registry.yarnpkg.com/vue/-/vue-3.4.18.tgz#78dc26a3af616325dba6eb3156b87ec5e6d9b089"
+vue@^3.4.19:
+  version "3.4.19"
+  resolved "https://registry.yarnpkg.com/vue/-/vue-3.4.19.tgz#f9ae0a44db86628548736ff04152830726a97263"
   dependencies:
-    "@vue/compiler-dom" "3.4.18"
-    "@vue/compiler-sfc" "3.4.18"
-    "@vue/runtime-dom" "3.4.18"
-    "@vue/server-renderer" "3.4.18"
-    "@vue/shared" "3.4.18"
+    "@vue/compiler-dom" "3.4.19"
+    "@vue/compiler-sfc" "3.4.19"
+    "@vue/runtime-dom" "3.4.19"
+    "@vue/server-renderer" "3.4.19"
+    "@vue/shared" "3.4.19"
 
 watchpack-chokidar2@^2.0.1:
   version "2.0.1"
